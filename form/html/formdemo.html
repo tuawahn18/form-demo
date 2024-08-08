@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/formdemo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <title>Form Edit Demo</title>
+    
+</head>
+<body>
+    <div id="questions-container">
+        <!-- Dữ liệu -->
+    </div>
+    
+    <div id="edit-dialog" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Question</h2>
+            <form id="edit-form">
+                <div>
+                    <label for="question-number">Question Number:</label>
+                    <input type="text" id="question-number" name="question-number" readonly>
+                </div>
+                <div>
+                    <label for="question-text">Question:</label>
+                    <input type="text" id="question-text" name="question-text">
+                </div>
+                <div id="edit-options-container">
+                    <!-- Dữ liệu -->
+                </div>
+                <button type="button" id="submit-edit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="confirm-delete-dialog" class="modal">
+        <div class="modal-content">
+            <h2>Confirm Delete</h2>
+            <p>Are you sure you want to delete this question?</p>
+            <button id="confirm-delete">Yes, delete it</button>
+            <button id="cancel-delete">No, cancel</button>
+        </div>
+    </div>
+
+        <script src="/js/questions.js"></script>
+        <script src="/js/form.js"></script>
+    </body>
+</html>
